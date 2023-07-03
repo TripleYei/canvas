@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Canvas</title>
+</head>
+ 
+<body>
+    <canvas id="animation1"></canvas>
+    <canvas id="animation2"></canvas>
+    <canvas id="animation3"></canvas>
+    <script>
+        const canvas1 = document.querySelector('#animation1');
+        const ctx1 = canvas1.getContext('2d');
+        ctx1.beginPath();
+        ctx1.fillStyle = 'red';
+        ctx1.arc(70, 60, 50, 0, 2 * Math.PI);
+        ctx1.fill();
+        ctx1.beginPath();
+        ctx1.fillStyle = 'black';
+        ctx1.arc(50, 40, 10, 0, Math.PI * 2);
+        ctx1.moveTo(90, 40);
+        ctx1.arc(90, 40, 10, 0, Math.PI * 2);
+        ctx1.moveTo(35, 60);
+        ctx1.arc(70, 60, 35, 0, Math.PI);
+        ctx1.fill();
+
+        const canvas2 = document.querySelector('#animation2');
+        const ctx2 = canvas2.getContext('2d');
+        ctx2.beginPath();
+        ctx2.fillStyle = 'yellow';
+        ctx2.arc(70, 60, 50, 0, 2 * Math.PI);
+        ctx2.fill();
+        ctx2.beginPath();
+        ctx2.fillStyle = 'black';
+        ctx2.arc(50, 40, 10, 0, Math.PI * 2);
+        ctx2.moveTo(90, 40);
+        ctx2.arc(90, 40, 10, 0, Math.PI * 2);
+        ctx2.moveTo(35, 60);
+        ctx2.arc(70, 60, 35, 0, Math.PI);
+        ctx2.fill();
+
+
+        const canvas3 = document.querySelector('#animation3');
+        const ctx3 = canvas3.getContext('2d');
+        ctx3.beginPath();
+        ctx3.fillStyle = 'green';
+        ctx3.arc(70, 60, 50, 0, 2 * Math.PI);
+        ctx3.fill();
+        ctx3.beginPath();
+        ctx3.fillStyle = 'black';
+        ctx3.arc(50, 40, 10, 0, Math.PI * 2);
+        ctx3.moveTo(90, 40);
+        ctx3.arc(90, 40, 10, 0, Math.PI * 2);
+        ctx3.moveTo(35, 60);
+        ctx3.arc(70, 60, 35, 0, Math.PI);
+        ctx3.fill();
+    </script>
+</body>
+ 
+</html>
